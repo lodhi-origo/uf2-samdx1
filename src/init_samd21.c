@@ -116,5 +116,10 @@ void system_init(void) {
     current_cpu_frequency_MHz = 48;
 
 }
-
-void SysTick_Handler(void) { LED_TICK(); }
+volatile uint32_t ledOnToggleCount = 0;
+void SysTick_Handler(void) { 
+    LED_TICK(); 
+    if (ledOnToggleCount >= 400000) {
+        //LED_MSC_OFF();
+        resetIntoApp();
+    }}

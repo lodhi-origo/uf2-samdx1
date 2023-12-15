@@ -1,0 +1,18 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\lib\\cmsis\\CMSIS_RTX\\SRC\\IAR\\RTX_Lib_CM.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\lib\\cmsis\\CMSIS_RTX\\SRC\\IAR\\RTX_Lib_CM.eww": {
+      "configs": {
+        "${workspaceFolder}\\lib\\cmsis\\CMSIS_RTX\\SRC\\IAR\\RTX_Lib_CM.ewp": "CM0_LE"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\lib\\cmsis\\CMSIS_RTX\\SRC\\IAR\\RTX_Lib_CM.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.2"
+  }
+}

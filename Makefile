@@ -1,4 +1,4 @@
-BOARD=zero
+BOARD=sparkfun-samd21-mini
 -include Makefile.user
 include boards/$(BOARD)/board.mk
 CC=arm-none-eabi-gcc
@@ -29,9 +29,9 @@ $(WFLAGS)
 UF2_VERSION_BASE = $(shell git describe --dirty --always --tags)
 
 ifeq ($(CHIP_FAMILY), samd21)
-LINKER_SCRIPT=scripts/samd21j18a.ld
+LINKER_SCRIPT=scripts/samd21g18a_flash.ld
 BOOTLOADER_SIZE=8192
-SELF_LINKER_SCRIPT=scripts/samd21j18a_self.ld
+SELF_LINKER_SCRIPT=scripts/samd21g18a_sram.ld
 endif
 
 ifeq ($(CHIP_FAMILY), samd51)
